@@ -1,0 +1,138 @@
+/* Overall Page Styling */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Heading Styling */
+.contact-container h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    background-clip: text; /* Non-standard, but included for future compatibility */
+    -webkit-text-fill-color: transparent;
+}
+
+/* Contact Options Styling */
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 30px;
+}
+
+/* Individual Contact Option Styling */
+.contact-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-option:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Gmail Contact Option Styling */
+.contact-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.contact-link:hover .contact-icon {
+    background-color: #ff6f61;
+}
+
+/* WhatsApp QR Code Styling */
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.qr-code-container canvas {
+    border: 5px solid #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.qr-code-container p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-option {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-link {
+        font-size: 1.2rem;
+    }
+
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .qr-code-container canvas {
+        width: 120px !important;
+        height: 120px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-option {
+        padding: 15px;
+    }
+}
+
