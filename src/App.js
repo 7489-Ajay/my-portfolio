@@ -6,6 +6,7 @@ import ContactUs from './Pages/ContactUs';
 import Project from './Pages/Project';
 import Resume from './Pages/Resume';
 import About from './Pages/About';
+import Footer from './Pages/Footer';
 
 const App = () => {
   return (
@@ -20,10 +21,12 @@ const App = () => {
           <Route path="/Project" element={<Project />} />
           <Route path="/About" element={<About />} />
           <Route path="/Resume" element={<Resume />} />
+          <Route path="/Footer" element={<Footer />} />
         </Routes>
-        
-        
+       
+        <Footer/>
       </div>
+     
     </Router>
   );
 };
