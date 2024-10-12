@@ -1,28 +1,30 @@
 import React from 'react';
-import './Contact Us.css'; // Ensure your CSS file is named correctly
+import './Contact Us.css';
 
-const ContactUs = () => {
+const Contact = () => {
     return (
         <div className="contact-container">
-            <h2>Contact Me</h2>
+            <h2>Contact Us</h2>
             <div className="contact-options">
-                {/* Gmail Contact Option */}
-                <div className="contact-option">
-                    <a href="mailto:ajaysharma987077@gmail.com" className="contact-link">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" 
-                             alt="Gmail" 
-                             className="contact-icon"/>
-                        <p>Send me an Email</p>
+                <div className="contact-item">
+                    <h3>Connect with us on WhatsApp:</h3>
+                    <a 
+                        href="https://wa.me/9557922701" // Yahan apna WhatsApp number daalna hai (without country code)
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="contact-link"
+                    >
+                        Chat on WhatsApp
                     </a>
                 </div>
-
-                {/* WhatsApp Contact Option */}
-                <div className="contact-option">
-                    <a href="https://wa.me/9557922701" className="contact-link">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-                             alt="WhatsApp" 
-                             className="contact-icon"/>
-                        <p>Chat with me on WhatsApp</p>
+                
+                <div className="contact-item">
+                    <h3>Or email us directly:</h3>
+                    <a 
+                        href="ajaysharma987077@gmail.com" // Yahan apna Gmail address daalna hai
+                        className="gmail-link"
+                    >
+                        Send an Email
                     </a>
                 </div>
             </div>
@@ -30,4 +32,4 @@ const ContactUs = () => {
     );
 };
 
-export default ContactUs;
+export default Contact;

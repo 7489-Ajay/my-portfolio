@@ -1,7 +1,7 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import Navbar from './MyComponents/Navbar';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Pages/Home'
+import Home from './Pages/Home';
 import ContactUs from './Pages/ContactUs';
 import Project from './Pages/Project';
 import Resume from './Pages/Resume';
@@ -10,25 +10,19 @@ import Footer from './Pages/Footer';
 
 const App = () => {
   return (
-    <Router>
-      <div >
-        <Navbar/> {/* Navbar को यहां जोड़ें */}
-        <Routes>
-          <Route />
-          
-          <Route  path="/" element={<Home />} />
-          <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/Project" element={<Project />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Resume" element={<Resume />} />
-          <Route path="/Footer" element={<Footer />} />
-        </Routes>
-       
-        <Footer/>
-      </div>
-     
-    </Router>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+      <Footer />
+    </>
   );
 };
 
 export default App;
+

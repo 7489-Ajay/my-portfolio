@@ -1,152 +1,231 @@
 /* Resume.css */
+body {
+    background-color: #1d1f21;
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
 .resume-container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 900px;
+    margin: 50px auto;
     padding: 20px;
-    background: #ffffff;
+    background-color: #232528;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    color: #333;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.2s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .resume-header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .resume-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    transition: color 0.3s ease;
+    font-size: 2.5rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    animation: textGlow 2s ease-in-out infinite alternate;
 }
 
-.resume-header h1:hover {
-    color: #007bff;
+@keyframes textGlow {
+    from {
+        text-shadow: 0 0 10px #61dafb, 0 0 20px #61dafb;
+    }
+    to {
+        text-shadow: 0 0 20px #21a1f1, 0 0 30px #21a1f1;
+    }
 }
 
 .resume-header p {
-    font-size: 18px;
-    color: #555;
+    font-size: 1.2rem;
+    color: #cfcfcf;
+    animation: fadeInText 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info a {
+    color: #61dafb;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.resume-header p:hover {
-    color: #007bff;
+.contact-info a:hover {
+    color: #21a1f1;
 }
 
-.contact-info p {
-    margin: 5px 0;
-    transition: color 0.3s ease;
+.contact-info a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #61dafb;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
 }
 
-.contact-info p:hover {
-    color: #007bff;
+.contact-info a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 .resume-section {
     margin-bottom: 30px;
+    opacity: 0;
+    animation: sectionFadeIn 1s ease forwards;
+}
+
+@keyframes sectionFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .resume-section h2 {
-    font-size: 28px;
-    border-bottom: 2px solid #007bff;
+    font-size: 1.8rem;
+    color: #ffffff;
+    border-bottom: 2px solid #61dafb;
     padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #007bff;
-    transition: color 0.3s ease;
+    margin-bottom: 15px;
+    position: relative;
+    animation: slideInLeft 1.2s ease-in-out;
 }
 
-.resume-section h2:hover {
-    color: #0056b3;
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-.skills-list {
-    list-style: none;
-    padding: 0;
+.skills-list,
+.project-item,
+.education-item,
+.certification-item,
+.hackathon-item {
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeInScale 1.5s ease forwards;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .skills-list li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    background: #f9f9f9;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
     padding: 10px;
-    border-radius: 4px;
-    transition: background 0.3s ease, transform 0.3s ease;
+    background: #282c34;
+    border-radius: 5px;
 }
 
 .skills-list li:hover {
-    background: #e2e2e2;
-    transform: scale(1.02);
+    transform: translateX(10px);
+    background-color: #33373e;
 }
 
-.experience-item, .education-item {
-    margin-bottom: 20px;
+ul.skills-list {
+    list-style-type: square;
+    padding-left: 20px;
 }
 
-.experience-item h3, .education-item h3 {
-    font-size: 22px;
-    margin-bottom: 5px;
-    color: #333;
-    transition: color 0.3s ease;
+.project-item,
+.education-item,
+.certification-item,
+.hackathon-item {
+    padding: 10px;
+    background-color: #282c34;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.experience-item h3:hover, .education-item h3:hover {
-    color: #007bff;
+.project-item:hover,
+.education-item:hover,
+.certification-item:hover,
+.hackathon-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
-.experience-item h4, .education-item h4 {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 10px;
-    transition: color 0.3s ease;
+.project-item h3,
+.education-item h3,
+.certification-item h3,
+.hackathon-item h3 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    letter-spacing: 1px;
 }
 
-.experience-item h4:hover, .education-item h4:hover {
-    color: #007bff;
+.project-item p,
+.education-item p,
+.certification-item p,
+.hackathon-item p {
+    color: #b0b0b0;
 }
 
-.experience-item p, .education-item p {
-    font-size: 16px;
-    line-height: 1.6;
-    transition: color 0.3s ease;
+/* Button Styles */
+.resume-container .resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experience-item p:hover, .education-item p:hover {
-    color: #007bff;
+.resume-container .resume-button:hover {
+    background-color: #21a1f1;
+    box-shadow: 0 0 15px rgba(97, 218, 251, 0.7);
 }
-
-@media (max-width: 768px) {
-    .resume-container {
-        padding: 15px;
-    }
-
-    .resume-header h1 {
-        font-size: 30px;
-    }
-
-    .resume-header p {
-        font-size: 16px;
-    }
-
-    .resume-section h2 {
-        font-size: 24px;
-    }
-
-    .skills-list li {
-        font-size: 16px;
-    }
-
-    .experience-item h3, .education-item h3 {
-        font-size: 20px;
-    }
-
-    .experience-item h4, .education-item h4 {
-        font-size: 16px;
-    }
-}
-
-
-
-

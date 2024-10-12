@@ -20,6 +20,16 @@ const Home = () => {
         return () => clearInterval(typingEffect); // Cleanup interval when component unmounts
     }, []);
 
+    // Function to handle CV download
+    const handleDownload = () => {
+        const link = document.createElement('a'); // Create a link element
+        link.href = `${process.env.PUBLIC_URL}/cv-ajay-sharma.pdf`; // Set the URL to the CV file
+        link.download = 'cv-ajay-sharma.pdf'; // Set the download attribute
+        document.body.appendChild(link); // Append the link to the body
+        link.click(); // Trigger the click event
+        document.body.removeChild(link); // Remove the link after triggering
+    };
+
     return (
         <div className="home-container">
             <div className="left-section">
@@ -45,7 +55,7 @@ const Home = () => {
                     </a>
                 </div>
                 <div className="download-cv">
-                    <button>Download CV</button>
+                    <button onClick={handleDownload}>Download CV</button> {/* Call the download function */}
                 </div>
             </div>
             <div className="right-section">
@@ -58,3 +68,4 @@ const Home = () => {
 };
 
 export default Home;
+

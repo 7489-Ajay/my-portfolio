@@ -83,7 +83,7 @@
   flex-direction: column;
   position: absolute;
   top: 70px;
-  left: 30px;
+  left: 5px;
   width: 100%;
   background-color: rgba(26, 26, 26, 0.866); /* More opaque when open */
   backdrop-filter: blur(15px); /* Stronger blur for open menu */
