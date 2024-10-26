@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-import Crop from '../assets/Crop.png';
+import Img74 from '../assets/Img74.png';
 
 const Home = () => {
     const [role, setRole] = useState(''); // State to handle dynamic text
@@ -60,7 +60,7 @@ const Home = () => {
             </div>
             <div className="right-section">
                 <div className="photo-container">
-                    <img src={Crop} alt="Ajay Sharma" />
+                    <img src={Img74} alt="Ajay Sharma" />
                 </div>
             </div>
         </div>

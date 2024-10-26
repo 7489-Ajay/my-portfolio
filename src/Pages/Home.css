@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  padding: 0 5%; /* Reduced padding for better mobile experience */
+  padding: 0 5%;
   background-color: #1c1c1e;
   color: #ffffff;
 }
@@ -92,7 +92,17 @@
 /* Right section for image */
 .right-section {
   flex: 1;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .photo-container img {
@@ -195,8 +205,3 @@
       max-width: 55%;
   }
 }
-
-
-
-
-
