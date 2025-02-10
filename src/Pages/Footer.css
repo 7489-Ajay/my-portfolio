@@ -6,6 +6,7 @@
     position: relative; /* For positioning of animations */
 }
 
+/* Footer Content Section */
 .footer-content {
     display: flex; /* Flexbox layout for content */
     justify-content: space-around; /* Space out sections */
@@ -61,4 +62,5 @@
         padding-left: 0; /* Remove padding for lists */
     }
 }
+
 

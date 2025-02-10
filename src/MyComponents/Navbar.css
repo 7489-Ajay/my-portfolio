@@ -10,6 +10,7 @@
   backdrop-filter: blur(10px); /* Blur effect to create glassmorphism */
   transition: background-color 0.3s;
   z-index: 1000; /* Ensure navbar stays on top */
+ 
 }
 
 /* Logo styles */

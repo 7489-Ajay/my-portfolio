@@ -23,8 +23,8 @@ const Home = () => {
     // Function to handle CV download
     const handleDownload = () => {
         const link = document.createElement('a'); // Create a link element
-        link.href = `${process.env.PUBLIC_URL}/cv-ajay-sharma.pdf`; // Set the URL to the CV file
-        link.download = 'cv-ajay-sharma.pdf'; // Set the download attribute
+        link.href = `${process.env.PUBLIC_URL}/2030.pdf`; // Set the URL to the CV file
+        link.download = '2030.pdf'; // Set the download attribute
         document.body.appendChild(link); // Append the link to the body
         link.click(); // Trigger the click event
         document.body.removeChild(link); // Remove the link after triggering
@@ -64,8 +64,11 @@ const Home = () => {
                 </div>
             </div>
         </div>
+    
     );
+    
 };
 
-export default Home;
+
+export default Home; 
 

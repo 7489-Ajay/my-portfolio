@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import './Footer.css'; // Footer ke CSS file ko import karein
 
 const Footer = () => {
@@ -19,6 +19,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
+
             <div className="footer-bottom">
                 <p>&copy; {new Date().getFullYear()} Ajay Kumar Sharma. All Rights Reserved.</p>
             </div>
@@ -27,4 +28,5 @@ const Footer = () => {
 }
 
 export default Footer;
+
 
