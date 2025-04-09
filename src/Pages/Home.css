@@ -1,4 +1,3 @@
-/* General styles */
 .home-container {
   display: flex;
   flex-direction: row;
@@ -10,20 +9,20 @@
   color: #ffffff;
 }
 
-/* Left section */
+
 .left-section {
   flex: 1;
   padding-right: 2%;
 }
 
-/* Static text styling */
+
 .static-text h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
   color: #f5f5f5;
 }
 
-/* Dynamic role with typing effect */
+
 .dynamic-role {
   color: #4db5ff;
   font-weight: bold;
@@ -45,7 +44,7 @@
   to { border-right-color: transparent; }
 }
 
-/* Introduction text */
+
 .introduction p {
   font-size: 1.2rem;
   line-height: 1.6;
@@ -53,7 +52,7 @@
   color: #d1d1d1;
 }
 
-/* Social links styling */
+
 .social-links {
   margin-top: 2rem;
 }
@@ -69,7 +68,7 @@
   color: #ffffff;
 }
 
-/* Download CV button styling */
+
 .download-cv button {
   background-color: #4db5ff;
   color: #1c1c1e;
@@ -119,7 +118,7 @@
   }
 }
 
-/* Responsive design for tablets and smaller devices */
+
 @media screen and (max-width: 1024px) {
   .home-container {
       flex-direction: column;
@@ -154,7 +153,7 @@
   }
 }
 
-/* Mobile view adjustments */
+
 @media screen and (max-width: 768px) {
   .home-container {
       flex-direction: column;
@@ -184,7 +183,7 @@
   }
 }
 
-/* Extra small devices */
+
 @media screen and (max-width: 480px) {
   .static-text h1, .dynamic-role {
       font-size: 1.6rem;
@@ -203,6 +202,7 @@
       max-width: 55%;
   }
 }  
+
 
 
 

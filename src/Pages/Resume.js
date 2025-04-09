@@ -1,12 +1,12 @@
 import React from 'react';
-import './Resume.css'; // Import the CSS file
+import './Resume.css'; 
 
 const Resume = () => {
     return (
         <div className="resume-container">
             <header className="resume-header">
                 <h1>Ajay Kumar Sharma</h1>
-                <p>Software Developer | MCA Student</p>
+                <p>Frontend Developer | React.JS | MERN</p>
                 <div className="contact-info">
                     <p>Email: <a href="mailto:ajaysharma987077@gmail.com">ajaysharma987077@gmail.com</a></p>
                     <p>Phone: +91 9557922701</p>
@@ -19,13 +19,11 @@ const Resume = () => {
             <section className="resume-section skills-section">
                 <h2>Skills</h2>
                 <ul className="skills-list">
-                    <li>React.js</li>
-                    <li>JavaScript (ES6+)</li>
                     <li>HTML5 & CSS3</li>
-                    <li>Node.js</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>Version Control (Git)</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>Bootstrap, Tailwind CSS</li>
+                    <li>MongoDB, Express.js, React.js, Node.js</li>
+                    <li>Git & Github</li>
                 </ul>
             </section>
 
@@ -33,12 +31,12 @@ const Resume = () => {
                 <h2>Education</h2>
                 <div className="education-item">
                     <h3>Master of Computer Applications (MCA)</h3>
-                    <h4>Inverties University - 2024 to Present</h4>
+                    <h4>Inverties University, Bareilly[Up] - 2024 to 2026 [pursuing]</h4>
                     <p>• Relevant coursework: Advanced Programming, Data Structures, Algorithms, Web Development</p>
                 </div>
                 <div className="education-item">
                     <h3>Bachelor of Computer Applications (BCA)</h3>
-                    <h4>Ganga Institute of Technology and Management - 2020 to 2023</h4>
+                    <h4>Ganga Institute of Technology and Management, Jhajjar [Haryana] - 2020 to 2023</h4>
                     <p>• Relevant coursework: Programming Principles, Database Management, Software Engineering</p>
                 </div>
             </section>
@@ -61,20 +59,20 @@ const Resume = () => {
                 <h2>Hackathon Achievement</h2>
                 <div className="hackathon-item">
                     <h3>College Hackathon</h3>
-                    <p>• Participated in the Intra-College Hackathon and secured 5th place among 50 teams.</p>
-                    <p>• Developed a smart solution for automating student attendance using Node.js and React.js.</p>
+                    <p>• Led my team to secure 2nd position in a college-level Hackathon, demonstrating leadership and technical problem-solving skills.</p>
+                    <p>• Built a smart solution to automate student attendance using React.js and Node.js, focusing on real-time efficiency and user-friendly design.</p>
                 </div>
             </section>
 
             <section className="resume-section certification-section">
                 <h2>Certifications</h2>
                 <div className="certification-item">
-                    <h3>Front-End Web Development with React</h3>
-                    <p>• Coursera - Completed with distinction</p>
+                    <h3>React.js</h3>
+                    <p>• Greatlearning - Completed with distinction</p>
                 </div>
                 <div className="certification-item">
-                    <h3>Python for Everybody</h3>
-                    <p>• Coursera - Completed with distinction</p>
+                    <h3>JavaScript</h3>
+                    <p>• Simplilearn - Completed with distinction</p>
                 </div>
             </section>
         </div>

@@ -9,7 +9,7 @@ const Contact = () => {
                 <div className="contact-item">
                     <h3>Connect with us on WhatsApp:</h3>
                     <a 
-                        href="https://wa.me/9557922701" // Yahan apna WhatsApp number daalna hai (without country code)
+                        href="https://wa.me/9557922701" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="contact-link"
@@ -21,7 +21,7 @@ const Contact = () => {
                 <div className="contact-item">
                     <h3>Or email us directly:</h3>
                     <a 
-                        href="ajaysharma987077@gmail.com" // Yahan apna Gmail address daalna hai
+                        href="ajaysharma987077@gmail.com" 
                         className="gmail-link"
                     >
                         Send an Email

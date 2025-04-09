@@ -1,5 +1,5 @@
  import React from 'react';
-import './Footer.css'; // Footer ke CSS file ko import karein
+import './Footer.css'; 
 
 const Footer = () => {
     return (
@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="about">
                     <h3>About Me</h3>
                     <p>
-                        Hello! I'm Ajay Kumar Sharma, a passionate web developer dedicated to building exceptional digital experiences.
+                        Hello! I'm Ajay Kumar Sharma, a passionate Frontend developer dedicated to building exceptional digital experiences.
                     </p>
                 </div>
                 <div className="contact-info">

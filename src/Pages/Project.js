@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Project.css'; // Import the CSS file
+import './Project.css'; 
 
 const Project = () => {
     const [projects, setProjects] = useState([
@@ -9,12 +9,7 @@ const Project = () => {
             description: 'A personal portfolio website built using React and styled-components.',
             link: 'https://github.com/yourusername/portfolio-website',
         },
-        {
-            id: 2,
-            title: 'E-commerce App',
-            description: 'An e-commerce platform with product listings, cart functionality, and payment integration.',
-            link: 'https://github.com/yourusername/ecommerce-app',
-        },
+       
     ]);
 
     const [newProject, setNewProject] = useState({
@@ -37,7 +32,7 @@ const Project = () => {
                 ...newProject,
             };
             setProjects([...projects, projectToAdd]);
-            setNewProject({ title: '', description: '', link: '' }); // Reset form
+            setNewProject({ title: '', description: '', link: '' }); 
         } else {
             alert('Please fill all fields.');
         }

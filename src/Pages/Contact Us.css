@@ -36,7 +36,7 @@ h2 {
 }
 
 .qr-code {
-    width: 150px; /* Adjust size as needed */
+    width: 150px; 
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s;
@@ -77,11 +77,11 @@ h2 {
     }
 
     .qr-code {
-        width: 120px; /* Smaller QR code for mobile */
+        width: 120px; 
     }
 
     .contact-options {
-        flex-direction: column; /* Stack items vertically on mobile */
+        flex-direction: column; 
     }
 
     .contact-item {

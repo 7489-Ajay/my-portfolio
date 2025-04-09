@@ -1,6 +1,6 @@
-// About.js
+
 import React from 'react';
-import './About.css'; // Make sure to include the CSS file
+import './About.css'; 
 
 const About = () => {
     return (
@@ -23,37 +23,37 @@ const About = () => {
                     <div className="about-item">
                         <div className="about-text">
                             <h3>Career Goals</h3>
-                            <p>I aspire to become a [Desire Position/role] in the [Fullstack Developer]. My goal is to leverage my skills to drive innovation and make a meaningful impact in the industry.</p>
+                            <p>I aspire to become a skilled Frontend Developer. [My goal] is to apply my web development knowledge to create clean, responsive interfaces and grow by contributing to real-world projects.</p>
                         </div>
                     </div>
                     <div className="about-item">
                         <div className="about-text">
                             <h3>Interests</h3>
-                            <p>I am passionate about [Your Interests], including [Specific Technologies, Fields, or Hobbies]. These interests fuel my enthusiasm and keep me engaged with the latest trends and advancements.</p>
+                            <p>I am passionate about [frontend development], especially creating responsive user interfaces using React.js. I enjoy exploring new web technologies and improving user experience through clean design.</p>
                         </div>
                     </div>
                     <div className="about-item">
                         <div className="about-text">
                             <h3>Hobbies</h3>
-                            <p>In my leisure time, I enjoy [Songs,Cricket], which help me maintain a balanced lifestyle and inspire creativity. Whether it's [Cricket], or [Song], these hobbies contribute to my personal growth.</p>
+                            <p>I enjoy listening to music as it helps me stay relaxed and manage stress during work. It often sparks creative ideas while designing user interfaces, allowing me to stay focused and inspired throughout the development process.</p>
                         </div>
                     </div>
                     <div className="about-item">
                         <div className="about-text">
                             <h3>Location</h3>
-                            <p>I am currently based in [Budaun], where I continue to explore new opportunities and contribute to local tech communities.</p>
+                            <p>I am currently based in [Budaun], actively exploring opportunities to grow as a frontend developer and staying connected with the latest trends in web development.</p>
                         </div>
                     </div>
                     <div className="about-item">
                         <div className="about-text">
                             <h3>Personal Philosophy</h3>
-                            <p>I believe in continuous learning and adapting to change. My philosophy is to stay curious, embrace challenges, and strive for excellence in everything I do.</p>
+                            <p>I believe in lifelong learning, staying curious, and turning challenges into growth opportunities. For me, consistency, adaptability, and a positive mindset are key to personal and professional success.</p>
                         </div>
                     </div>
                     <div className="about-item">
                         <div className="about-text">
                             <h3>Achievements</h3>
-                            <p>Throughout my journey, I have achieved [Highlight a Major Achievement] and [Another Achievement]. These milestones reflect my commitment to personal and professional growth.</p>
+                            <p>Throughout my academic journey, I led my team to secure 2nd position in a college-level Hackathon and successfully built multiple frontend projects. These milestones reflect my dedication to continuous learning and real-world application of my skills..</p>
                         </div>
                     </div>
                 </div>

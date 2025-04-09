@@ -2,11 +2,15 @@ import React, { useEffect, useState, useRef } from "react";
 import "./Skills.css";
 
 const skillsData = [
-  { skill: "HTML", percentage: 75 },
-  { skill: "CSS", percentage: 60 },
-  { skill: "JavaScript", percentage: 45 },
+  { skill: "HTML5 & CSS3", percentage: 75 },
+  { skill: "JavaScript", percentage: 60 },
+  { skill: "Bootstrap", percentage: 65 },
+  { skill: "Tailwind CSS", percentage: 70 },
+  { skill: "MongoDB", percentage: 50 },
+  { skill: "Express.js", percentage: 68 },
   { skill: "React.js", percentage: 80 },
-  { skill: "Bootstrap", percentage: 50 },
+  { skill: "Node.js", percentage: 75 },
+  
 ];
 
 const Skills = () => {
@@ -18,10 +22,10 @@ const Skills = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setVisible(true);
-          observer.disconnect(); // Ensure animation runs only once
+          observer.disconnect(); 
         }
       },
-      { threshold: 0.5 } // Trigger when 50% of section is visible
+      { threshold: 0.5 } 
     );
 
     if (skillsRef.current) {

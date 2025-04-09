@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // For navigation
-import './Navbar.css'; // Import the CSS file
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +33,6 @@ const Navbar = () => {
             </ul>
         </nav>
     );
-}
+};
 
 export default Navbar;
