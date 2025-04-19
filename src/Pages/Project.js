@@ -5,10 +5,26 @@ const Project = () => {
     const [projects, setProjects] = useState([
         {
             id: 1,
-            title: 'Portfolio Website',
-            description: 'A personal portfolio website built using React and styled-components.',
-            link: 'https://github.com/yourusername/portfolio-website',
+            title: 'Responsive Landing Page',
+            description: 'A modern, animated landing page using HTML, CSS, and JavaScript — featuring smooth scroll, hover effects, and responsive layout across all devices.',
+            link: 'https://codvedalandingpage.netlify.app/',
         },
+
+        {
+            id: 1,
+            title: 'Single Page Application (SPA)',
+            description: 'A React.js-based portfolio-style SPA with smooth navigation, AOS animations, and component-based structure (Home, About, Contact).',
+            link: 'https://codvedaspa.netlify.app/',
+        },
+
+        {
+            id: 1,
+            title: 'GitHub Repository Explorer (REST API Project)',
+            description: 'A fully functional GitHub API Fetch app using React.js — includes search, sort by stars/forks, dark mode, animations, and live GitHub data display.',
+            link: 'https://githubapifetch.netlify.app/',
+        },
+
+        
        
     ]);
 
