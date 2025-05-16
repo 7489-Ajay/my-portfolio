@@ -28,7 +28,7 @@ const Project = () => {
             id: 1,
             title: 'Interior Catalogue Website',
             description: 'A responsive interior catalogue website built with MERN stack, featuring category filters and a clean, user-friendly design.',
-            link: 'https://githubapifetch.netlify.app/',
+            link: 'https://interiorcatalogue.netlify.app/',
         },
 
         
