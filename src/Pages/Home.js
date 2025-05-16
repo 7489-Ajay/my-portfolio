@@ -22,8 +22,8 @@ const Home = () => {
 
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = `${process.env.PUBLIC_URL}/Ajay_Sharma_Frontend_Developer_Resume_.pdf`;
-        link.download = 'Ajay_Sharma_Frontend_Developer_Resume_.pdf';
+        link.href = `${process.env.PUBLIC_URL}/Ajay_kumar_sharma_CV_.pdf`;
+        link.download = 'Ajay_kumar_sharma_CV_.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
