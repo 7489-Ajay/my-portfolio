@@ -67,13 +67,10 @@ const Resume = () => {
             <section className="resume-section certification-section">
                 <h2>Certifications</h2>
                 <div className="certification-item">
-                    <h3>React.js</h3>
-                    <p>• Greatlearning - Completed with distinction</p>
+                    <h3>Web Development</h3>
+                    <p>• EduSkills - Completed Web Development Certification in May 2025 </p>
                 </div>
-                <div className="certification-item">
-                    <h3>JavaScript</h3>
-                    <p>• Simplilearn - Completed with distinction</p>
-                </div>
+                
             </section>
         </div>
     );
