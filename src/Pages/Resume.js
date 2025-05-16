@@ -49,9 +49,9 @@ const Resume = () => {
                     <p>• Implemented responsive design to ensure compatibility across various devices.</p>
                 </div>
                 <div className="project-item">
-                    <h3>Task Management App</h3>
-                    <p>• Built a task management application using Node.js and Express, allowing users to manage tasks and track progress.</p>
-                    <p>• Integrated a MongoDB database to store user data and tasks.</p>
+                    <h3> Interior Catalogue Website</h3>
+                    <p>• Developed a fully responsive personal portfolio using React.js and Tailwind CSS,</p>
+                    <p>• showcasing live projects with GitHub and LinkedIn integration. Deployed on netlify.</p>
                 </div>
             </section>
 
