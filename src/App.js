@@ -8,6 +8,8 @@ import Resume from './Pages/Resume';
 import About from './Pages/About';
 import Footer from './Pages/Footer';
 import Skills from './Pages/Skills';
+import Certificates from './Pages/Certificates';
+
 
 const App = () => {
   return (
@@ -20,6 +22,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/certificates" element={<Certificates />} />
       </Routes>
       <Footer />
     </>

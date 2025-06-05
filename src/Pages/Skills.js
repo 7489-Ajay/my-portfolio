@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Skills.css";
 
 const skillsData = [
@@ -10,7 +10,6 @@ const skillsData = [
   { skill: "Express.js", percentage: 68 },
   { skill: "React.js", percentage: 80 },
   { skill: "Node.js", percentage: 75 },
-  
 ];
 
 const Skills = () => {
@@ -22,10 +21,10 @@ const Skills = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setVisible(true);
-          observer.disconnect(); 
+          observer.disconnect();
         }
       },
-      { threshold: 0.5 } 
+      { threshold: 0.3 }
     );
 
     if (skillsRef.current) {
@@ -38,26 +37,47 @@ const Skills = () => {
   return (
     <div className="skills-container" ref={skillsRef}>
       <h2 className="skills-title">My Skills</h2>
-      <div className="skills-list">
-        {skillsData.map((skill, index) => (
-          <div key={index} className="skill">
-            <div className="skill-header">
-              <span className="skill-name">{skill.skill}</span>
-              <span className="skill-percentage">{skill.percentage}%</span>
+      <div className="skills-grid">
+        {skillsData.map((skill, index) => {
+          const radius = 50;
+          const circumference = 2 * Math.PI * radius;
+          const offset = visible
+            ? circumference - (skill.percentage / 100) * circumference
+            : circumference;
+
+          return (
+            <div key={index} className="circular-skill">
+              <div className="circle-wrapper">
+                <svg className="circle-svg">
+                  <circle className="bg-circle" r="50" cx="60" cy="60" />
+                  <circle
+                    className="fg-circle"
+                    r="50"
+                    cx="60"
+                    cy="60"
+                    style={{
+                      strokeDasharray: circumference,
+                      strokeDashoffset: offset,
+                    }}
+                  />
+                </svg>
+                <div className="circle-text">
+                  <div className="skill-name-inside">{skill.skill}</div>
+                  <div className="percentage-inside">{skill.percentage}%</div>
+                </div>
+              </div>
             </div>
-            <div className="progress-bar-container">
-              <div
-                className={`progress-bar ${visible ? "animate" : ""}`}
-                style={{ width: visible ? `${skill.percentage}%` : "0%" }}
-              ></div>
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
 };
 
 export default Skills;
+
+
+
+
 
 
