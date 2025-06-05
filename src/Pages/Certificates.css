@@ -33,7 +33,7 @@
   justify-content: space-between;
 
   /* Equal height for cards */
-  min-height: 340px;
+  min-height: 300px;
 }
 
 .certificate-card:hover {
@@ -167,4 +167,5 @@
     padding: 1rem;
   }
 }
+
 

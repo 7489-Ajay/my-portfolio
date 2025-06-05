@@ -68,7 +68,22 @@ const Resume = () => {
                 <h2>Certifications</h2>
                 <div className="certification-item">
                     <h3>Web Development</h3>
-                    <p>• EduSkills - Completed Web Development Certification in May 2025 </p>
+                    <p>• EduSkills - Completed Web Development Certification </p>
+                </div>
+
+                <div className="certification-item">
+                    <h3>REACT(Basic)</h3>
+                    <p>• HackerRank - Certified  Web Development Certification  </p>
+                </div>
+
+                <div className="certification-item">
+                    <h3>Frontend Developmet</h3>
+                    <p>• Oneroadmap - Completed Web Development Certification </p>
+                </div>
+
+                <div className="certification-item">
+                    <h3>Solution architecture job simluation</h3>
+                    <p>• AWS - Completed Web Development Certification  </p>
                 </div>
                 
             </section>
