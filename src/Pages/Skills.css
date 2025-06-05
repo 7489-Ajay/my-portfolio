@@ -15,6 +15,7 @@ body {
   animation: fadeIn 1.2s ease-in-out;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .skills-container::before {
@@ -63,6 +64,8 @@ body {
   position: relative;
   width: 120px;
   height: 120px;
+  min-width: 90px;
+  min-height: 90px;
 }
 
 .circle-svg {
@@ -75,9 +78,9 @@ body {
 .fg-circle {
   fill: none;
   stroke-width: 10;
-  cx: 60;
-  cy: 60;
-  r: 50;
+  cx: 50%;
+  cy: 50%;
+  r: 45;
 }
 
 .bg-circle {
@@ -164,8 +167,8 @@ body {
   }
 
   .circle-wrapper {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
   }
 
   .skill-name-inside {
@@ -175,7 +178,13 @@ body {
   .percentage-inside {
     font-size: 0.75rem;
   }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 }
+
 
 
 
